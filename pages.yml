@@ -1,0 +1,3 @@
+#配置pages编译 find /pages/id.md pages title
+- id: about
+  title: About
