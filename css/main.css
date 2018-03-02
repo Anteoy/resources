@@ -136,7 +136,9 @@ p {
     margin-top: 80px;
     padding-bottom: 20px;
     text-align: center;
-    color: #666666;
+    /*color: #666666;*/
+    /*color: #4183C4;*/
+    color: white;
     font-size: 12px;
     text-transform: none;
  }
