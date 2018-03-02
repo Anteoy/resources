@@ -32,16 +32,16 @@
         <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
         <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
         <script>
-        var gitment = new Gitment({
-          id : '{{.fi.Id}}'
-          owner: 'Anteoy',
-          repo: 'gitment-store',
-          oauth: {
-            client_id: 'ef421f31d2f578120bb5',
-            client_secret: '5ab49416ee33dca55485d006f5300f1e7dbfe7d9',
-          },
-        })
-        gitment.render('container')
+            var gitment = new Gitment({
+              id : '{{.fi.Id}}',
+              owner: 'Anteoy',
+              repo: 'gitment-store',
+              oauth: {
+                client_id: 'ef421f31d2f578120bb5',
+                client_secret: '5ab49416ee33dca55485d006f5300f1e7dbfe7d9',
+              },
+            })
+            gitment.render('container')
         </script>
 	</div>
 </div>
