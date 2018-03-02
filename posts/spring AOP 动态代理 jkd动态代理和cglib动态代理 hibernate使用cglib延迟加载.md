@@ -1,4 +1,5 @@
 ---
+id: 31
 date: 2016-07-19 22:03:00
 title: spring AOP 动态代理 jkd动态代理和cglib动态代理 hibernate使用cglib延迟加载
 categories:

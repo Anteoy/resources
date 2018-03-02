@@ -1,4 +1,5 @@
 ---
+id: 37
 date: 2016-12-28 23:08:00
 title: ubuntu16.04 自动挂载新分区到指定目录下
 categories:

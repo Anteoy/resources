@@ -1,4 +1,5 @@
 ---
+id: 47
 date: 2016-10-03 00:05:00
 title: 关于MD5，SALT与SHA1的部分HASH算法解析
 categories:

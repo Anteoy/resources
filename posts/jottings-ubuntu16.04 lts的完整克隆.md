@@ -1,4 +1,5 @@
 ---
+id: 20
 date: 2016-12-03 18:29:00
 title: jottings-ubuntu16.04 lts的完整克隆
 categories:

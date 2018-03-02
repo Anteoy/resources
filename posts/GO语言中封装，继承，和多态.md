@@ -1,4 +1,5 @@
 ---
+id: 13
 date: 2017-01-10 00:04:00
 title: GO语言中封装，继承，和多态
 categories:

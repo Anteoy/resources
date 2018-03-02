@@ -1,4 +1,5 @@
 ---
+id: 59
 date: 2017-03-02 23:26:00
 title: 自己写GoBinarySearchTree 二叉查找树
 categories:

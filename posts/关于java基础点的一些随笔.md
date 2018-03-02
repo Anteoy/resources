@@ -1,4 +1,5 @@
 ---
+id: 42
 date: 2016-07-18 20:55:00
 title: 关于java基础点的一些随笔
 categories:

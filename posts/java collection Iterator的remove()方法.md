@@ -1,4 +1,5 @@
 ---
+id: 15
 date: 2016-09-12 17:09:00
 title: java collection Iterator的remove()方法
 categories:

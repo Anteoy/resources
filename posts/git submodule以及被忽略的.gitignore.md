@@ -1,4 +1,5 @@
 ---
+id: 8
 date: 2017-06-25 23:48:00
 title: git submodule以及被忽略的.gitignore
 categories:

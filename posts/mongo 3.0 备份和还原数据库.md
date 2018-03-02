@@ -1,4 +1,5 @@
 ---
+id: 23
 date: 2017-01-27 16:03:00
 title: mongo 3.0 备份和还原数据库
 categories:

@@ -1,4 +1,5 @@
 ---
+id: 12
 date: 2017-03-24 17:13:00
 title: go协程goroutine与Java多线程比较
 categories:

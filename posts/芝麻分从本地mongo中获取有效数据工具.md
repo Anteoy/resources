@@ -1,4 +1,5 @@
 ---
+id: 62
 date: 2017-01-16 22:00
 title: 芝麻分从本地mongo中获取有效数据工具
 categories:

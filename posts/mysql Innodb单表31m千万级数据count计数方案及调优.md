@@ -1,4 +1,5 @@
 ---
+id: 24
 date: 2017-11-28 15:26:00
 title: mysql Innodb单表31m千万级数据count计数方案及调优
 categories:

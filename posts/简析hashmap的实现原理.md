@@ -1,4 +1,5 @@
 ---
+id: 52
 date: 2016-10-01 21:31:00
 title: 简析hashmap的实现原理
 categories:

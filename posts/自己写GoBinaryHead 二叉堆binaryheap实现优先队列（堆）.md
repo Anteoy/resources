@@ -1,4 +1,5 @@
 ---
+id: 58
 date: 2017-03-03 18:13:00
 title: 自己写GoBinaryHead 二叉堆binaryheap实现优先队列（堆）
 categories:

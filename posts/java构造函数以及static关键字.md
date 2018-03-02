@@ -1,4 +1,5 @@
 ---
+id: 18
 date: 2017-01-03 11:41:00
 title: java构造函数以及static关键字
 categories:

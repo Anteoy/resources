@@ -1,4 +1,5 @@
 ---
+id: 36
 date: 2017-03-05 00:17:00
 title: ubuntu 安装本地版storm并运行WordCount
 categories:

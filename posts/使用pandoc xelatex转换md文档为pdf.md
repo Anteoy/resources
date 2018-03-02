@@ -1,4 +1,5 @@
 ---
+id: 41
 date: 2018-02-16 23:33:00
 title: 使用pandoc xelatex转换md文档为pdf
 categories:

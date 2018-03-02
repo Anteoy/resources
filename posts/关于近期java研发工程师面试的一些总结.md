@@ -1,4 +1,5 @@
 ---
+id: 49
 date: 2016-07-29 16:05:00
 title: 关于近期java研发工程师面试的一些总结
 categories:

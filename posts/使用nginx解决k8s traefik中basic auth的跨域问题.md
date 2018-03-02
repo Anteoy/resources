@@ -1,4 +1,5 @@
 ---
+id: 40
 date: 2018-01-09 16:24:00
 title: 使用nginx解决k8s traefik中basic auth的跨域问题
 categories:

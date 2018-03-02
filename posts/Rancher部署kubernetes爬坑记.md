@@ -1,4 +1,5 @@
 ---
+id: 29
 date: 2017-08-31 21:22:00
 title: Rancher部署kubernetes爬坑记
 categories:

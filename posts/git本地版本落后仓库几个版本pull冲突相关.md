@@ -1,4 +1,5 @@
 ---
+id: 9
 date: 2016-07-19 17:24:00
 title: git本地版本落后仓库几个版本pull冲突相关
 categories:

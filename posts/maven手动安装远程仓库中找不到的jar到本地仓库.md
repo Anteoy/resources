@@ -1,4 +1,5 @@
 ---
+id: 22
 date: 2016-09-09 23:23:00
 title: maven手动安装远程仓库中找不到的jar到本地仓库
 categories:

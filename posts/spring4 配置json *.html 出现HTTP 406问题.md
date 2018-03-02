@@ -1,4 +1,5 @@
 ---
+id: 32
 date: 2016-11-10 17:35:00
 title: spring4 配置json *.html 出现HTTP 406问题
 categories:

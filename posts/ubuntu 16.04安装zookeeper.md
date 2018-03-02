@@ -1,4 +1,5 @@
 ---
+id: 38
 date: 2016-11-24 17:01:00
 title: ubuntu 16.04安装zookeeper
 categories:

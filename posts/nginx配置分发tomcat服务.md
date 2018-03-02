@@ -1,4 +1,5 @@
 ---
+id: 26
 date: 2016-11-21 22:10:00
 title: nginx配置分发tomcat服务
 categories:

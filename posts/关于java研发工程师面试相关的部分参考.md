@@ -1,4 +1,5 @@
 ---
+id: 43
 date: 2016-07-21 12:27:00
 title: 关于java研发工程师面试相关的部分参考
 categories:

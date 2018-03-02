@@ -1,4 +1,5 @@
 ---
+id: 46
 date: 2016-07-19 15:26:00
 title: 关于java部分知识点的总结（二）
 categories:

@@ -1,4 +1,5 @@
 ---
+id: 60
 date: 2017-03-01 22:24:00
 title: 自己写LinkedList GoLinkedList
 categories:

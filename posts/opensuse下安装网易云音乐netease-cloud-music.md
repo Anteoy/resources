@@ -1,4 +1,5 @@
 ---
+id: 27
 date: 2017-10-04 22:49:00
 title: opensuse下安装网易云音乐netease-cloud-music
 categories:

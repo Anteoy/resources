@@ -1,4 +1,5 @@
 ---
+id: 3
 date: 2017-09-01 10:19:00
 title: archlinux安装教程以及自己踩过的坑
 categories:

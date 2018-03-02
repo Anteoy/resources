@@ -1,4 +1,5 @@
 ---
+id: 16
 date: 2017-01-09 22:24:00
 title: Java中方法多态以及多接口实现
 categories:

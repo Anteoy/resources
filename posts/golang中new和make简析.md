@@ -1,4 +1,5 @@
 ---
+id: 10
 date: 2017-05-31 23:18:00
 title: golang中new和make简析
 categories:

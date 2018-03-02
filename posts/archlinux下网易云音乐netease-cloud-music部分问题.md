@@ -5,6 +5,7 @@ categories:
     - linux
 tags:
     - linux,archlinux,网易云音乐
+id: 2
 ---
 
 *个人为网易云音乐重度用户，从ubuntu到arch后，感觉netease-cloud-music仍然在ubuntu中支持更好，毕竟linux下的netease-cloud-music是由网易云音乐和深度deepin联合开发的，ubuntu有官方的deb包，arch的aur中的netease-cloud-music是基于此deb进行打包的，在体验上没有差别，在arch中用起来感觉也还不错，在此记录下使用过程中遇到的问题以及解决方式，本文会不定时更新*

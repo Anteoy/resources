@@ -5,6 +5,7 @@ categories:
     - 架构
 tags:
     - git
+id: 1
 ---
 
 #a bit of git

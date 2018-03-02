@@ -1,4 +1,5 @@
 ---
+id: 57
 date: 2017-03-01 16:39:00
 title: 自己写ArraryList GoArrayList
 categories:

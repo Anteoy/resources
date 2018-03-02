@@ -1,4 +1,5 @@
 ---
+id: 28
 date: 2016-10-26 14:50:00
 title: personal jottings （一）
 categories:

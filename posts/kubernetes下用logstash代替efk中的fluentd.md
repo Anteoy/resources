@@ -1,4 +1,5 @@
 ---
+id: 21
 date: 2018-01-09 17:14:00
 title: kubernetes下用logstash代替efk中的fluentd
 categories:
