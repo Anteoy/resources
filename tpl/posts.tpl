@@ -1,4 +1,7 @@
 {{template "header"}}
+<title>{{.fi.Title}}</title>
+</head>
+<body onload="prettyPrint()">
 <div class="top-nav">
 			<ul>
 			    <li><a href="/" >Index</li>

@@ -13,6 +13,4 @@
 	<link rel="stylesheet" href="/css/main.css"/>
 	<link rel="shortcut icon" href="/fav.ico"/>
 	<script type="text/javascript" src="/prettify/prettify.js"></script>
-	</head>
-	<body onload="prettyPrint()">
 {{end}}
