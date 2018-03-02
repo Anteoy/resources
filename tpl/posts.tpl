@@ -28,13 +28,19 @@
 		  </div>
 		 <div id="article-content"> {{.fi.Content|unescaped}} </div>
 		<hr/>
-		<div id="SOHUCS" ></div>
-        <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
-        <script type="text/javascript">
-            window.changyan.api.config({
-            appid: 'cytroRXMV',
-            conf: 'prod_f03f628ad1f20646fa84b64386060ea1'
-            });
+		<div id="container"></div>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script>
+        var gitment = new Gitment({
+          owner: 'anteoy',
+          repo: 'gitment-store',
+          oauth: {
+            client_id: 'ef421f31d2f578120bb5',
+            client_secret: '5ab49416ee33dca55485d006f5300f1e7dbfe7d9',
+          },
+        })
+        gitment.render('container')
         </script>
 	</div>
 </div>
