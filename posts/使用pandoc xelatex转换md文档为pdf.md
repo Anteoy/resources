@@ -32,7 +32,7 @@ tags:
     ```
      pandoc -s --toc --smart --latex-engine=xelatex -V CJKmainfont='WenQuanYi Micro Hei Mono' -V geometry:margin=1in ~/桌面/resume-2018.md  -o ~/桌面/test1.pdf
     ```
-   这里的-s 为standalone,--toc, --table-of-contents,CJKmainfont指定字体，我这里使用geometry:margin=1in的实际效果可以节省一页pdf.
+   这里的-s 为standalone,--toc, --table-of-contents,生成目录,根据个人需要看是否需要此选项,CJKmainfont指定字体，我这里使用geometry:margin=1in的实际效果可以节省一页pdf.
     
 ### 参考
 1. [https://jdhao.github.io/2017/12/10/pandoc-markdown-with-chinese/#%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E4%B8%AD%E6%96%87](https://jdhao.github.io/2017/12/10/pandoc-markdown-with-chinese/#%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E4%B8%AD%E6%96%87)
