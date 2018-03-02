@@ -33,7 +33,7 @@
         <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
         <script>
         var gitment = new Gitment({
-          owner: 'anteoy',
+          owner: 'Anteoy',
           repo: 'gitment-store',
           oauth: {
             client_id: 'ef421f31d2f578120bb5',
