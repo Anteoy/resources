@@ -39,7 +39,7 @@
 
     	    <li><a href="/pages/about.html" >About me</a></li>
 
-    	<p>it’s powered by <a href="www.github.com">anteoy·liongo</a>, you can click my github to get the source code ,if you
+    	<p>it’s powered by <a href="https://github.com/Anteoy/liongo">anteoy·liongo</a>, you can click my github to get the source code ,if you
     		find anything or some advise,please contact me,the email address is anteoy@gmail.com,you can also find me at there
     	</p>
         <p style="
