@@ -35,20 +35,15 @@
 
     	<p>you can click down</p>
 
-    	    <li><a href="/blog.html" >Blog</a></li>
+    	    <li><a href="/blog_1.html" >我的博客</a></li>
+    	    <li><a href="/archive.html" >日期归档</a></li>
+    	    <li><a href="/classify.html" >分类归档</a></li>
+    	    <li><a href="/pages/about.html" >关于我</a></li>
 
-    	    <li><a href="/pages/about.html" >About me</a></li>
-
-    	<p>it’s powered by <a href="https://github.com/Anteoy/liongo">anteoy·liongo</a>, you can click my github to get the source code ,if you
-    		find anything or some advise,please contact me,the email address is anteoy@gmail.com,you can also find me at there
+    	<p>it’s powered by <a href="https://github.com/Anteoy/liongo">anteoy·liongo</a>, you can click my github to get the source code
     	</p>
-        <p style="
-               padding-top: 110px;
-               margin-bottom: -40px;
-           ">contact me at :</p>
-    	<p>
 
-    	    <a href="https://github.com/Anteoy"><img
+    	    <a href="https://github.com/Anteoy" style="margin-left: 50px;"><img
                 				src="/images/site/github.png"
                 				alt="github" style="height:80px"/>
             </a>
