@@ -35,10 +35,10 @@
 
     	<p>you can click down</p>
 
-    	    <li><a href="/blog_1.html" >我的博客</a></li>
-    	    <li><a href="/archive.html" >日期归档</a></li>
-    	    <li><a href="/classify.html" >分类归档</a></li>
-    	    <li><a href="/pages/about.html" >关于我</a></li>
+    	    <li  style="list-style-type: none;"><a href="/blog_1.html">我的博客</a></li>
+    	    <li  style="list-style-type: none;"><a href="/archive.html">日期归档</a></li>
+    	    <li  style="list-style-type: none;"><a href="/classify.html">分类归档</a></li>
+    	    <li  style="list-style-type: none;"><a href="/pages/about.html">关于我</a></li>
 
     	<p>it’s powered by <a href="https://github.com/Anteoy/liongo">anteoy·liongo</a>, you can click my github to get the source code
     	</p>
