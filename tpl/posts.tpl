@@ -17,7 +17,7 @@
 </div>
 <div style="clear:both;height:50px" id="interval"></div><!-- 中间间隔 -->
 <div class="main">
-	<div class="main-inner">
+	<div class="main-inner" style="margin-left: 15%;margin-right: 15%;">
 		 <div id="article-title">
 		 	<a href="/{{.fi.Link}}">{{.fi.Title}}</a>
 		 </div>
