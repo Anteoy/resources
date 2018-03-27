@@ -14,7 +14,7 @@
 </div>
 <div style="clear:both;" id="interval"></div>
 <div class="main">
-	<div class="main-inner">
+	<div class="main-inner" style="margin-left: 15%;margin-right: 15%;">
         <div id="tag-index">
         {{range .archives}}
         	<h1>{{.Year}}</h1>
