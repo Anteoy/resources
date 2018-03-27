@@ -18,55 +18,72 @@ harbor是由vmware开源的企业级docker repository，提供私有仓库，安
 
 ### 部署过程
 1. 首先按照[官方教程](https://github.com/kubernetes/helm#install)安装[Helm](https://github.com/kubernetes/helm#install)，然后初始化Helm。
-`注意`： 初始化需要使用下面命令使用canary镜像，否则无法正常安装，会报错helm部署文件的格式不正确，目前这是一个已知issue:[https://github.com/vmware/harbor/issues/4484](https://github.com/vmware/harbor/issues/4484)
+
+    `注意`： 初始化需要使用下面命令使用canary镜像，否则无法正常安装，会报错helm部署文件的格式不正确，目前这是一个已知issue:[https://github.com/vmware/harbor/issues/4484](https://github.com/vmware/harbor/issues/4484)
+    
     ```
     helm init --canary-image
     ```
+    
     如果你和我一样，在这之前已经用官方教程安装好了helm，则可使用下面命令更新helm server:
+    
     ```
     helm init --canary-image --upgrade
     ```
+    
 2. 下载helm部署代码并进入harbor helm目录。
+
     ```
     git clone https://github.com/vmware/harbor
     cd harbor/contrib/helm/harbor
     ```
+    
     推荐使用这个连接下载指定的文件夹，否则在网络不佳的情况下拉取全部代码会比较耗时:
+    
     ```
     https://minhaskamal.github.io/DownGit/#/home
     ```
+
 3. 更新helm dependency
-   harbor的helm部署依赖了postgresql的helm，在官方的安装文档没有明确说明，因为我也是第一次使用，直接按照官方文档说明安装，就会缺失postgresql的部署，导致整个服务无法启动
+
+    harbor的helm部署依赖了postgresql的helm，在官方的安装文档没有明确说明，因为我也是第一次使用，直接按照官方文档说明安装，就会缺失postgresql的部署，导致整个服务无法启动
+    
     ```
     helm dependency update
     ```
+    
 4. 安装harbor
-   这里官方提供了两种方式，Insecure和Secure，我这里选用的是Secure安全的部署方式，让harbor自己生成CA和SSL，简单方便。执行如下命令安装harbor:
-   ```
-   helm install . --debug --name hub --set externalDomain=harbor.my.domain
-   ```
-   externalDomain为外部能访问到harbor的域名，到目前为止，你可以在本地/etc/hosts中添加域名解析，从本地访问进行测试，待测试完成后再加入traefik-ingress中，当然你也可以直接在traefik-ingress中添加域名解析。
-5. 添加traefik-ingress的域名解析：
+
+    这里官方提供了两种方式，Insecure和Secure，我这里选用的是Secure安全的部署方式，让harbor自己生成CA和SSL，简单方便。执行如下命令安装harbor:
+    
     ```
-    apiVersion: extensions/v1beta1
-    kind: Ingress
-    metadata:
-      name: traefik-default-ingress
-      namespace: default
-      annotations:
-        kubernetes.io/ingress.class: "traefik"
-    spec:
-      rules:
-      - host: harbor.my.domain
-        http:
-          paths:
-          - path: /
-            backend:
-              serviceName: my-release-harbor-ui
-              servicePort: 80
+    helm install . --debug --name hub --set externalDomain=harbor.my.domain
     ```
     
-### helm harbor自定义配置
+    externalDomain为外部能访问到harbor的域名，到目前为止，你可以在本地/etc/hosts中添加域名解析，从本地访问进行测试，待测试完成后再加入traefik-ingress中，当然你也可以直接在traefik-ingress中添加域名解析。
+   
+   
+5. 添加traefik-ingress的域名解析
+    ```
+        apiVersion: extensions/v1beta1
+        kind: Ingress
+        metadata:
+          name: traefik-default-ingress
+          namespace: default
+          annotations:
+            kubernetes.io/ingress.class: "traefik"
+        spec:
+          rules:
+          - host: harbor.my.domain
+            http:
+              paths:
+              - path: /
+                backend:
+                  serviceName: my-release-harbor-ui
+                  servicePort: 80
+    ```
+
+### helm harbor自定义配置   
 注意： 我这里把所有自定义配置放到后面的附录中，供大家参考,同时可以点击[https://github.com/Anteoy/harbor-helm/commit/226b296d130b4f956f8463eecf2aa473bc1e844c](https://github.com/Anteoy/harbor-helm/commit/226b296d130b4f956f8463eecf2aa473bc1e844c),查看我上传到github的自定义配置，从github阅读更清晰。
 
 1. 重要：在生产环境中需要持久化数据存储，否则pod重启或重建会造成数据丢失。如果有创建好的storageClass可以直接在values.yaml配置，如果没有或暂时不能使用SC的，比如我这里只有nfs，则需要像我一样多修改一些配置。另外,nfs其实在社区也有storageClass的驱动库，不过我看了下使用起来较为繁琐，于是这里仍然修改为使用nfs。
@@ -74,6 +91,7 @@ harbor是由vmware开源的企业级docker repository，提供私有仓库，安
 3. 注意修改postgresql的持久化数据卷，可参考[https://github.com/kubernetes/charts/tree/master/stable/postgresql](https://github.com/kubernetes/charts/tree/master/stable/postgresql)
  
 ### 附录
+
 ```
  templates/adminserver/adminserver-cm.yaml
 @@ -1,6 +1,7 @@
