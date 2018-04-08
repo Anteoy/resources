@@ -23,9 +23,10 @@
         				<li><a href="/classify.html">Classify</a></li>
         				<li><a href="/pages/about.html">About</a></li>
         				<li><a href="/pnotelogin.html" >Pnote</a></li>
-        				{{range .Nav}}
+        				{{range .nav}}
         				<li><a href="{{.Href}}" target="{{.Target}}">{{.Name}}</a></li>
         				{{end}}
+        				<div><a href="javascript:void(0);" style="float: right;font-size: 16px;">{{get "meta.view"}}的博客</a></div>
         			</ul>
         </div>
         <div style="clear:both;"></div>
