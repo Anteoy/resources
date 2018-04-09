@@ -1,4 +1,6 @@
 {{template "header"}}
+<title>{{get "meta.view"}}的博客-{{get "meta.site"}}</title>
+</head>
 <!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
 <div class="top-nav">
 			<ul>

@@ -1,4 +1,6 @@
 {{template "header"}}
+<title>{{get "meta.view"}}的博客-{{get "meta.site"}}</title>
+</head>
 <div class="top-nav">
 	<ul>
 	    <li><a href="/" >Index</li>

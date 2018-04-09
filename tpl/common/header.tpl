@@ -11,6 +11,6 @@
 	<link rel="stylesheet" href="/prettify/normalize.css"/>
 	<link rel="stylesheet" href="/prettify/prettify_{{"codetheme"|get}}.css"/>
 	<link rel="stylesheet" href="/css/main.css"/>
-	<link rel="shortcut icon" href="/fav.ico"/>
+	<link rel="shortcut icon" href="/favicon.ico"/>
 	<script type="text/javascript" src="/prettify/prettify.js"></script>
 {{end}}
