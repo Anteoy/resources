@@ -1,7 +1,7 @@
 {{template "header"}}
 <title>{{get "meta.view"}}的博客-{{get "meta.site"}}</title>
 </head>
-<body onload="prettyPrint()" style="text-align: center">
+<body onload="prettyPrint()" >
 <div class="top-nav">
 	<ul>
 	    <li><a href="/" >Index</li>
