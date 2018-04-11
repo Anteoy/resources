@@ -28,7 +28,7 @@
 </div>
 <div style="clear:both;height:50px" id="interval"></div><!-- 中间间隔 -->
 <div class="main">
-	<div class="main-inner" style="margin-left: 15%;margin-right: 15%;">
+	<div class="main-inner" style="margin-left: 13%;margin-right: 13%;">
 		<div id="tags-main">
 			{{range $k,$v := .cats}}
         	<a href="/classify.html#{{$k}}">{{$k}}</a>

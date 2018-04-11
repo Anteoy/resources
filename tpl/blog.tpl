@@ -30,7 +30,7 @@
 
 <div style="clear:both;height:50px" id="interval"></div><!-- 中间间隔 -->
 <div class="main">
-	<div class="main-inner"  style="margin-left: 15%;margin-right: 15%;">
+	<div class="main-inner"  style="margin-left: 13%;margin-right: 13%;">
 		<div class="article-list">
             {{range .ar}}
                 <div class="article">

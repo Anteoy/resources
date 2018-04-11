@@ -24,7 +24,7 @@
                 <li><a href="/classify.html">Classify</a></li>
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pnotelogin.html" >Pnote</a></li>
-                {{range .nav}}
+         15       {{range .nav}}
                 <li><a href="{{.Href}}" target="{{.Target}}">{{.Name}}</a></li>
                 {{end}}
                 <li class="search" style="margin-top: 7.5;line-height: 2.8">
