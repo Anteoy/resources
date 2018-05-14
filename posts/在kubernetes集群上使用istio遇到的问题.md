@@ -1,4 +1,5 @@
 ---
+id: 66
 date: 2018-04-20 18:33:00
 title: 在kubernetes集群上使用istio遇到的问题
 categories:
