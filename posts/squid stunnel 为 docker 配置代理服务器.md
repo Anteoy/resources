@@ -32,7 +32,12 @@ tags:
     ```
 3. 编辑配置文件  vim /etc/stunnel/stunnel.conf
     ```
+    verify = 2 #要求并验证每个SSL连接的证书。如果未显示证书或无效证书，则会丢弃连接。
+    
+    CAfile = /etc/stunnel/stunnel.pem ##下一步生成的证书地址
+    
     client = no #是否为客户端 这里是服务端填写no
+    
     [squid]
     accept = 65501
     connect = 127.0.0.1:3128 #本地squid服务地址
@@ -40,8 +45,12 @@ tags:
     ```
 4. openssl生成证书,用户stunnel加密解密
     ```
-    openssl genrsa -out key.pem 2048
-    openssl req -new -x509 -key key.pem -out cert.pem -days 1095
+    openssl genrsa -out key.pem 2048   
+    
+    openssl req -new -x509 -key key.pem -out 
+    
+    cert.pem -days 1095
+    
     cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
     ```
     *注意：创建证书时，系统会要求您提供一些国家/地区信息，可随便输入，但是当被要求输入“Common Name”时，您必须输入正确的hostname或IP地址（VPS）,我这里输入的ip地址。*
@@ -68,9 +77,11 @@ tags:
     connect = {GCE_IP}:65501 #GCE 服务端ip和端口
     ```
     
-四. 浏览器SwitchyOmega代理穿透GFW
+### 浏览器SwitchyOmega代理穿透GFW
 1. 配置添加http代理127.0.0.1:65502 即可
-四. docker添加http/https代理请参考官方文档
+2. docker添加http/https代理请参考官方文档
 [https://docs.docker.com/engine/admin/systemd/#start-manually](https://docs.docker.com/engine/admin/systemd/#start-manually)
+
 ### 参考文献
-[https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu)-ubuntu)
+1. [https://www.stunnel.org/howto.html](https://www.stunnel.org/howto.html)
+2. [https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu)
