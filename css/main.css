@@ -113,6 +113,10 @@ a {
     font-size: 14px;
 }
 
+img {
+    background: white;
+}
+
 
 
 p {
@@ -224,4 +228,8 @@ p {
  }
 .comments {
     padding: 0 30px;
+}
+
+img {
+    background: white;
 }
