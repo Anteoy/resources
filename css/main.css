@@ -113,11 +113,6 @@ a {
     font-size: 14px;
 }
 
-img {
-    background: white;
-}
-
-
 
 p {
     line-height: 26px;
@@ -230,6 +225,6 @@ p {
     padding: 0 30px;
 }
 
-img {
+#article-content img {
     background: white;
 }
