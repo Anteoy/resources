@@ -1,5 +1,5 @@
 ---
-id: 70
+id: 92
 date: 2017-03-24 21:06:09
 title: [转]golang Garbage Collector(GC)
 categories:

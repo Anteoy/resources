@@ -1,5 +1,5 @@
 ---
-id: 75
+id: 87
 date: 2018-08-15 23:44:00
 title: [转]SolrCloud概览
 categories:

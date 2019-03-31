@@ -1,5 +1,5 @@
 ---
-id: 65
+id: 96
 date: 2018-03-27 22:33:00
 title: kubernetes下搭建harbor企业级docker仓库
 categories:

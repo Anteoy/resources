@@ -1,5 +1,5 @@
 ---
-id: 68
+id: 93
 date: 2017-05-02 21:15:32
 title: [转][Golang] 深入研究 Visual Studio Code for Golang
 categories:

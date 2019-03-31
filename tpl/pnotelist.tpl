@@ -13,14 +13,14 @@
                     <li><a href="{{.Href}}" target="{{.Target}}">{{.Name}}</a></li>
                 {{end}}
                 <li class="search" style="margin-top: 7.5;line-height: 2.8">
-                    <form target="_blank" method=get action="http://www.google.com/search">
-                    <input type=text value="kubernetes" name=q style="color: #ffffff;background-color: #404142;border-style: none;">
+                    <form target="_blank" method=get action="http://www.allocmem.com/search">
+                    <input type=text value="kubernetes" name=search style="color: #ffffff;background-color: #404142;border-style: none;">
                     <input type=submit name=btnG value="Search" style="background-color: #1d1f21;color: #999999;border-style: none;">
                     <input type=hidden name=ie value=GB2312>
                     <input type=hidden name=oe value=GB2312>
                     <input type=hidden name=hl value=zh-CN>
-                    <input type=hidden name=domains value="anteoy.site">
-                    <input type=hidden name=sitesearch value="anteoy.site">
+                    <input type=hidden name=domains value="www.allocmem.com">
+                    <input type=hidden name=sitesearch value="www.allocmem.com">
                     </form>
                 </li>
                 <div><a href="javascript:void(0);" style="float: right;font-size: 16px;">{{get "meta.view"}}的博客</a></div>

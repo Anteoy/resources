@@ -1,5 +1,5 @@
 ---
-id: 73
+id: 89
 date: 2018-07-21 11:00:00
 title: 深信服ssl-vpn在linux ubunt16.04中安装实测笔记
 categories:

@@ -1,5 +1,5 @@
 ---
-id: 74
+id: 88
 date: 2016-11-30 10:35:34
 title: [转]linux中service与chkconfig的替代者systemctl
 categories:

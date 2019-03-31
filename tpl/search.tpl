@@ -15,7 +15,7 @@
 		{{end}}
 		<li class="search" style="margin-top: 7.5;line-height: 2.8">
 		    <form target="_blank" method=get action="http://www.allocmem.com/search">
-            <input type=text value="kubernetes" name=search style="color: #ffffff;background-color: #404142;border-style: none;">
+            <input type=text value="{{.search}}" name=search style="color: #ffffff;background-color: #404142;border-style: none;">
             <input type=submit name=btnG value="Search" style="background-color: #1d1f21;color: #999999;border-style: none;">
             <input type=hidden name=ie value=GB2312>
             <input type=hidden name=oe value=GB2312>
@@ -30,6 +30,10 @@
 
 <div style="clear:both;height:50px" id="interval"></div><!-- 中间间隔 -->
 <div class="main">
+    <div style="
+        color: white;
+        font-size: x-large;
+    ">关于"{{.search}}"的搜索结果: </div>
 	<div class="main-inner"  style="margin-left: 13%;margin-right: 13%;">
 		<div class="article-list">
             {{range .ar}}

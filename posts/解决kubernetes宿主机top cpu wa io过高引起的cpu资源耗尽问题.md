@@ -1,5 +1,5 @@
 ---
-id: 71
+id: 91
 date: 2018-05-25 21:03:00
 title: 解决kubernetes宿主机top cpu wa io过高引起的cpu资源耗尽问题
 categories:
