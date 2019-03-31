@@ -33,7 +33,7 @@
     <div style="
         color: white;
         font-size: x-large;
-    ">关于"{{.search}}"的搜索结果: </div>
+    ">关于"{{.search}}"的搜索结果,找到相关结果{{.total}}个: </div>
 	<div class="main-inner"  style="margin-left: 13%;margin-right: 13%;">
 		<div class="article-list">
             {{range .ar}}
